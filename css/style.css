@@ -61,7 +61,6 @@ nav a:hover {
 
 .img h1 {
     font-size: 3rem;
-
     animation: fadeIn 2s ease;
     animation-delay: 0s;
     animation-iteration-count: 1;
