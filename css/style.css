@@ -76,7 +76,7 @@ nav a:hover {
 
     to {
         opacity: 1;
-        transform: translateY(20px);
+        transform: translateY(1.25rem);
     }
 }
 
@@ -102,14 +102,14 @@ nav a:hover {
     margin: 2rem 1rem 3rem 1rem;
     border-radius: 0.5rem;
     width: 100%;
-    max-width: 375px;
+    max-width: 23.4rem;
     background-color: var(--white);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
 .divFavoritos div:hover {
-    transform: translateY(-5px);
+    transform: translateY(-0.3rem);
 }
 
 img {
@@ -153,6 +153,8 @@ div p {
     background-color: var(--brownDark);
     color: var(--white);
     height: 2rem;
+    width: 5rem;
+    cursor: pointer;
 }
 
 .contacto input[type="submit"]:hover {
@@ -194,4 +196,21 @@ footer p {
 .fa-instagram:hover,
 .fa-x-twitter:hover {
     color: var(--brownLight);
+}
+
+/* *****media querys***** */
+@media screen and (max-width: 700px) {
+    .divFavoritos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacto input, textarea {
+        width: 20rem !important;
+    }
+
+    .contacto input[type="submit"] {
+        width: 5rem !important;
+    }
 }
